@@ -3,7 +3,9 @@ package it.unibs.fp.tamagolem;
 import java.util.Random;
 
 import it.unibs.fp.mylib.EstrazioniCasuali;
-
+/*
+* PER TETOFONTA VA BENE
+* */
 public class Equilibrio {
     private final int NUM_ELEMENTI = 6;
     private int tabella[][] = new int[NUM_ELEMENTI][NUM_ELEMENTI];
@@ -22,7 +24,7 @@ public class Equilibrio {
         for (int i = 0; i < NUM_ELEMENTI; i++) {
             int sommaRiga = 0;
             int j=0;
-            int n=(int)Math.random();
+            int n=EstrazioniCasuali.estraiIntero(0,50);
             while(j<NUM_ELEMENTI) {
                 if (i == j) {
                     tabella[i][j] = 0;
