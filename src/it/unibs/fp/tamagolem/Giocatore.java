@@ -3,12 +3,12 @@ import java.util.ArrayList;
 
 public class Giocatore {
 	private String nome;
-	private Arraylist<Tamagolem> tamagolem;
+	private ArrayList<Tamagolem> tamagolem;
 	private int numeroTamagolemDisponibili;
 	
-	public Giocatore(String nome) {
+	public Giocatore(String nome, ArrayList<Tamagolem> tamagolem) {
 		this.nome = nome;
-		this.tamagolem = new Arraylist<Tamagolem>();
+		this.tamagolem = new ArrayList<Tamagolem>();
 	}
 	
 	public void inizializzaTamagolem() {
