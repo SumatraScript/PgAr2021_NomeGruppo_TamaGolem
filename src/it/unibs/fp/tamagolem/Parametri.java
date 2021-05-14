@@ -7,13 +7,13 @@ public class Parametri {
 	//numero di tipologie di pietre(elementi disponibili)
 	final static public int N = 6;
 	//numero pietre che può ingurgitare Tamagolem
-	final static public double P = (double) Math.ceil((N + 1) / 3) + 1 ;
+	final static public int P = 4 ;
 	//numero di Tamagolem per giocatore
-	final static public double G = (double) Math.ceil((N - 1)*(N - 2) / (2 * P)) ;
+	final static public int G = 3 ;
 	//numero totale di pietre da cui i giocatori possono pescare s=18
-	final static public double S = (double) Math.ceil((2 * G * P) / N) * N;
+	final static public int S = 24;
 	//numero di pietre per elemento
-	final static public double A = S/N;
+	final static public int A = 4;
 	//vita di ogni Tamagolem
     final static public int V = 20;
 

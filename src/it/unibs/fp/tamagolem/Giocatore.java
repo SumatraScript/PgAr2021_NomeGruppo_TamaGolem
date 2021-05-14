@@ -3,27 +3,24 @@ import java.util.ArrayList;
 
 public class Giocatore {
 	private String nome;
-	private ArrayList<Tamagolem> tamagolem;
-	private int numeroTamagolemDisponibili;
+	private int numeroTamagolemDisponibili=Parametri.G;
 	
-	public Giocatore(String nome, ArrayList<Tamagolem> tamagolem) {
+	public Giocatore(String nome) {
 		this.nome = nome;
-		this.tamagolem = new ArrayList<Tamagolem>();
 	}
-	
-	public void inizializzaTamagolem() {
-		//crei il tamagolem con nome, pietre...
+
+	public boolean isDied(){
+		if(numeroTamagolemDisponibili<=0)
+			return true;
+		return false;
 	}
-	
-	public void inserisciGolem(Tamagolem t) {
-		this.tamagolem.add(t);
+
+	public int getNumeroTamagolemDisponibili() {
+		return numeroTamagolemDisponibili;
 	}
-	
-	public boolean isAlive() {
-		//controlla vita tamagolem e dice se ne hai almeno uno da giocare
-	if (numeroTamagolemDisponibili == 0) return false;
-	return true;
+
+	public String getNome() {
+		return nome;
 	}
-	
 
 }
