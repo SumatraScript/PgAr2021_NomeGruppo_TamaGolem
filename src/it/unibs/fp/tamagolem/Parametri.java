@@ -5,7 +5,7 @@ package it.unibs.fp.tamagolem;
  * */
 public class Parametri {
 	//numero di tipologie di pietre(elementi disponibili)
-	final static public double N = 6;
+	final static public int N = 6;
 	//numero pietre che può ingurgitare Tamagolem
 	final static public double P = (double) Math.ceil((N + 1) / 3) + 1 ;
 	//numero di Tamagolem per giocatore

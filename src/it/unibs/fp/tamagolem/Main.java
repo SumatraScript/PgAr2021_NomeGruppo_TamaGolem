@@ -5,5 +5,7 @@ public class Main {
 		Equilibrio nome =new Equilibrio();
 		nome.generaTabella();
 		nome.stampaTabella();
+		Equilibrio.generaTabella();
+		Equilibrio.stampaTabella();
 	}
 }
