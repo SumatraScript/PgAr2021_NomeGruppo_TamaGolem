@@ -1,9 +1,13 @@
 package it.unibs.fp.tamagolem;
 
+/**
+ * Classe pietra creata per la necessità
+ * di conciliazione tra le classe scritte
+ * */
 public class Pietra {
-    private Elemento nome;
+    private String nome;
 
-    public Pietra(Elemento nome) {
+    public Pietra(String nome) {
         this.nome = nome;
     }
 }
