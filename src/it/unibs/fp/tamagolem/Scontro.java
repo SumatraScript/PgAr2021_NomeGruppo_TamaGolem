@@ -1,17 +1,17 @@
 package it.unibs.fp.tamagolem;
 
 import it.unibs.fp.mylib.InputDati;
+import it.unibs.fp.mylib.MyMenu;
 
 import java.util.ArrayList;
-import java.util.Queue;
 
 public class Scontro {
+    public static final String MENU_INSERIMENTO_PIETRE = "Menu inserimento pietre";
     private Giocatore g1 = new Giocatore(InputDati.leggiStringaNonVuota(Parametri.MSG));// aggiunta della richesta del nome cfr. costruttore Giocatore
     private Giocatore g2 = new Giocatore(InputDati.leggiStringaNonVuota(Parametri.MSG));
+
     private ArrayList<Pietra> pietreTot=new ArrayList<Pietra>();
     private ArrayList<Elemento> elementi=new ArrayList<Elemento>();
-    private int tamagolemg1;
-    private int tamagolemg2;
     private int tabella[][]=new int[6][6];
 
 
@@ -38,6 +38,23 @@ public class Scontro {
         }
     }
 
-    private void evocazione
+    private Tamagolem evocazioneTamagolem(Giocatore giocatore){
+        if(!giocatore.isDied()){
+            MyMenu menuSceltaPietre= new MyMenu(MENU_INSERIMENTO_PIETRE, new String[]{
+                    Elemento.ACQUA.name(),
+                    Elemento.FUOCO.name(),
+                    Elemento.ARIA.name(),
+                    Elemento.TERRA.name(),
+                    Elemento.LUCE.name(),
+                    Elemento.TENEBRE.name()
+            });
+
+            Tamagolem tama= new Tamagolem();
+            return tama;
+        }
+        else
+            System.out.println("Il giocatore: "+ giocatore.getNome()+"ha finito i sui tamagolem");
+
+    }
 
 }
