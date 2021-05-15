@@ -9,7 +9,7 @@ public class Equilibrio {
     /** fornisce la tabella
      * @return the tabella
      */
-    public static int[][] getTabella() {
+    public int[][] getTabella() {
         return tabella;
     }
     /**

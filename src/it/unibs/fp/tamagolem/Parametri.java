@@ -1,7 +1,9 @@
 package it.unibs.fp.tamagolem;
 
 /**
- * a samu va bene
+ * Classe di Attributi final costanti che
+ * permettono il funzionamento del programma
+ * con N=6 elementi diversi
  * */
 public class Parametri {
 	//numero di tipologie di pietre(elementi disponibili)
@@ -16,7 +18,4 @@ public class Parametri {
 	final static public int A = 4;
 	//vita di ogni Tamagolem
     final static public int V = 20;
-
-    //Stringhe costanti
-    final static public String MSG = "INSERISCA NOME";
 }

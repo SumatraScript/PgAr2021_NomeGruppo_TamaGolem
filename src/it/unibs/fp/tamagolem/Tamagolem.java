@@ -40,6 +40,8 @@ public class Tamagolem {
     * */
    public Pietra sputa() {
         // aggiungo l'elemento, che era in fondo, in testa alla coda (returnato da poll) e poi lo rimuovo (sempre con poll)
-        this.pietre.add(pietre.poll());
+        Pietra pietraPollata= pietre.poll();
+        this.pietre.add(pietraPollata);
+        return pietraPollata;
     }
 }
